@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Health Chatbot - Medical AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="chatbot.js" defer></script>
+</head>
+<body class="bg-sky-50 text-gray-900 min-h-screen p-6 flex flex-col items-center">
+  <header class="w-full max-w-4xl mb-6 flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+      <img src="C:\Users\Mahdi\Videos\MedVision AI\MedVision AI- clear back.png" alt="MedVision AI Logo" class="h-32 w-auto mb-6" />
+      <h1 class="text-3xl font-bold text-blue-800">AI Health Chatbot</h1>
+    </div>
+  </header>
+  <main class="w-full max-w-4xl flex flex-col space-y-4">
+    <div id="chatContainer" class="flex flex-col space-y-4 overflow-y-auto max-h-[60vh] p-4 border rounded bg-white shadow">
+      <!-- Chat messages will appear here -->
+    </div>
+    <form id="chatForm" class="flex space-x-4">
+      <input type="text" id="userInput" placeholder="Enter your symptom or problem..." required
+        class="flex-grow p-2 border rounded bg-white" />
+      <button type="submit" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded font-semibold">
+        Send
+      </button>
+    </form>
+    <p class="text-sm text-gray-600 mt-2">
+      ⚠️ This is not a replacement for professional medical advice.
+    </p>
+    <a href="index.html" class="text-blue-600 hover:underline self-start mt-4">← Back to Home</a>
+  </main>
+  <script src="chatbot.js" defer></script>
+</body>
+</html>

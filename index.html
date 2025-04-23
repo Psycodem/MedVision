@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical AI Web App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            dark: {
+              800: '#1e293b',
+              900: '#0f172a'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="darkmode.js" defer></script>
+</head>
+<body class="bg-sky-50 text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300 min-h-screen flex flex-col items-center justify-center p-6">
+  <header class="w-full max-w-4xl mb-12 flex flex-col sm:flex-row sm:justify-between items-center space-y-4 sm:space-y-0">
+    <div class="flex items-center space-x-4">
+      <img src="MedVision AI- clear back.png" alt="MedVision AI Logo" class="h-40 w-auto mb-8">
+      <h1 class="text-4xl font-bold text-blue-800 dark:text-blue-200">MedVision AI</h1>
+    </div>
+    <button id="darkModeToggle" aria-label="Toggle Dark Mode" class="px-4 py-2 bg-blue-200 hover:bg-blue-300 rounded text-blue-800 font-semibold dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 transition-colors">
+      Toggle Dark Mode
+    </button>
+  </header>
+  <main class="flex flex-col space-y-6 sm:flex-row sm:space-x-12 sm:space-y-0">
+    <a href="fracture.html" class="px-8 py-6 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-center text-xl font-semibold shadow-md transition dark:bg-blue-800 dark:hover:bg-blue-900">
+      Upload X-ray
+    </a>
+    <a href="chatbot.html" class="px-8 py-6 bg-green-600 hover:bg-green-700 text-white rounded-lg text-center text-xl font-semibold shadow-md transition dark:bg-green-800 dark:hover:bg-green-900">
+      Talk to the AI Health Bot
+    </a>
+  </main>
+</body>
+</html>
